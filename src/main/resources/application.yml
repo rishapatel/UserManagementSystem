@@ -1,0 +1,34 @@
+server:
+  port: 8080
+  contextPath: /Application
+---
+spring:
+  profiles: local,default
+datasource:
+    sampleapp:
+    url: jdbc:mysql://localhost:3306/javaapplication
+    username: myuser
+    password: mypassword
+    driverClassName: com.mysql.jdbc.Driver
+    defaultSchema:
+    maxPoolSize: 20
+    hibernate:
+      hbm2ddl.method: create
+      show_sql: true
+      format_sql: true
+      dialect: org.hibernate.dialect.MySQLDialect
+spring:
+  profiles: prod
+datasource:
+  sampleapp:
+    url: jdbc:mysql://localhost:3306/javaapplication
+    username: myuser
+    password: mypassword
+    driverClassName: com.mysql.jdbc.Driver
+    defaultSchema:
+    maxPoolSize: 20
+    hibernate:
+      hbm2ddl.method: update
+      show_sql: true
+      format_sql: true
+      dialect: org.hibernate.dialect.MySQLDialect
