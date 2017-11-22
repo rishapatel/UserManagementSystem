@@ -87,9 +87,9 @@ import com.javaaapplication.springboot.util.CustomErrorType;;
 	                    HttpStatus.NOT_FOUND);
 	        }
 	 
-	        currentUser.setName(user.getName());
-	        currentUser.setAge(user.getAge());
-	        currentUser.setSalary(user.getSalary());
+	       	currentUser.setName(user.getName());
+	        currentUser.setEmailaddress(user.getEmailaddress());
+	        currentUser.setId(user.getId());
 	 
 	        userService.updateUser(currentUser);
 	        return new ResponseEntity<User>(currentUser, HttpStatus.OK);
