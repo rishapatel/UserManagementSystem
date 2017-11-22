@@ -7,7 +7,12 @@ import org.springframework.context.annotation.Import;
 import com.javaaapplication.springboot.configuration.JpaConfiguration;
 
 @Import(JpaConfiguration.class)
-@SpringBootApplication(scanBasePackages={"com.javaaapplication.springboot"})
+@SpringBootApplication
+
+/*In case if SpringBootApplication is unable to scan base class ,Use:
+*@SpringBootApplication(scanBasePackages={"com.javaaapplication.springboot"})
+*/
+
 public class Application {
 
 	public static void main(String[] args) {
