@@ -1,3 +1,20 @@
-Via Eclipse:: Run it directly, in that case default profile will be used. In case you want a different profile to be used, create a Run configuration for you main class, specifying the profile. To do that from toolbar, select Run->Run Configurations->Arguments->VM Arguments. Add -Dspring.profiles.active=local or -Dspring.profiles.active=prod]
+To Run Application:
 
-Open your browser and navigate to http://localhost:8080/Application/
+Via Eclipse:: Run it directly, in that case default profile will be used. In case you want a different profile to be used, 
+create a Run configuration for you main class, specifying the profile. To do that from toolbar, select Run->Run Configurations->Arguments->VM Arguments. Add -Dspring.profiles.active=local or -Dspring.profiles.active=prod]
+
+Please take special note of two ‘-’ in front of spring.profiles.active. In the blog it might be appearing as single ‘-’ but there are in fact two ‘-’ of them.
+
+Technologies Used to Create Project:
+
+Spring Boot 1.4.3.RELEASE
+Spring data JPA 1.10.6.RELEASE [transitively]
+Hibernate 5.0.11.Final [transitively]
+MySQL 5.1.40 [transitively]
+H2 1.4.187
+Hikari CP 2.4.7 [transitively]
+AngularJS 1.5.8
+Maven 3.1
+JDK 1.8
+Eclipse Neon 4.3
+
