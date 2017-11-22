@@ -1,0 +1,17 @@
+**run following SQL to create table and populate dummy data.
+
+create table APP_USER (
+   id BIGINT NOT NULL AUTO_INCREMENT,
+   name VARCHAR(30) NOT NULL,
+   emailaddress VARCHAR(30) NOT NULL
+   PRIMARY KEY (id)
+);
+   
+/* Populate USER Table */
+INSERT INTO APP_USER(id,name,emailaddress)
+VALUES (1,'Sam',sam@yahoo.com);
+   
+INSERT INTO APP_USER(id,name,emailaddress)
+VALUES (2,'Tom',tom@yahoo.com);
+ 
+commit;
