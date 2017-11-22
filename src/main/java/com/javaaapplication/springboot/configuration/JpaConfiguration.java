@@ -1,5 +1,9 @@
 package com.javaaapplication.springboot.configuration;
 
+/*
+ * Jpaconfiguration class file will create datasource using Hikari Connection Pooling,EntityManagerFactory,transaction manager,referring to spring-data repositories.
+ * 
+ */
 
 import javax.naming.NamingException;
 import javax.persistence.EntityManagerFactory;
